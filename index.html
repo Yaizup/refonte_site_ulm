@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body class="page-index">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-75 py-3">
+    <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+
+        <a class="navbar-brand d-flex align-items-center m-0" href="#">
+           <img src="img/acfl_logo.png" alt="acfl logo" class="logo-acfl">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navContent">
+            <ul class="navbar-nav align-items-lg-center gap-lg-4">
+                <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Nos activités</a></li>
+                <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Galerie</a></li>
+                <li class="nav-item"><a class="nav-link text-white fs-4" href="moyens-pedagogiques.html">Moyens pédagogiques</a></li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center text-white fs-4" href="contact.html">
+                        <i class="fa-solid fa-circle-user me-2"></i>Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-none d-lg-block espace-navigation"></div>
+    </div>
+</nav>
+
+<!-- Section hero -->
+<div class="container-fluid px-5 position-relative section-principale">
+
+    <div class="hero-image">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-50"></div>
+        <div class="position-absolute top-75 start-50 translate-middle w-100 text-center texte-principal" data-aos="fade-up" data-aos-duration="1200">
+            <p class="text-white ac2fl_txt">
+                AC2FL AERO CLUB,<br>
+                Votre ciel, notre passion.
+            </p>
+        </div>
+    </div>
+
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" aria-label="Présentation de l'aéroclub">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/test.jpg" class="d-block w-100 carousel-image" alt="Image de présentation de l'aéroclub">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-placeholder">Second slide</div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-placeholder">Third slide</div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Slide précédente">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Slide suivante">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<footer class="bg-black text-white py-5 mt-5">
+    <div class="container">
+        <div class="row gy-4 align-items-center">
+            <div class="col-lg-5">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                    <i class="fa-solid fa-envelope fs-4"></i>
+                    <a class="text-white" href="mailto:acf2l@gmail.com">Email : acf2l@gmail.com</a>
+                </div>
+                <div class="d-flex align-items-center gap-3 mb-4">
+                    <i class="fa-solid fa-phone fs-4"></i>
+                    <a class="text-white" href="tel:+33160566060">Tel : +33 01 60 56 60 60</a>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-location-dot fs-4"></i>
+                    <span>62, Avenue de la République, 70200 Lure</span>
+                </div>
+                <div class="d-flex gap-4 mt-5 fs-4">
+                    <a class="text-white" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="text-white" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="text-white" href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a class="text-white" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-7 text-center">
+                <p class="mb-4">L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports,<br>adhérente à la FFULM<br>(Fédération Française d’ULM)</p>
+                <p class="mb-4">Association enregistrée n°04674 - Agrément n° AS70986858<br>Le siège social demeure 62, Avenue de la République, 70200 Lure</p>
+                <p class="mb-0">© 2018 - 2026 AC2FL.fr - Réalisation : Nathan &amp; Radji.<br>Crédits photos, icônes, vidéos : Google, AC2FL, ChatGPT, Claude.<br>Remerciements spéciaux à nous-mêmes (oui vraiment)<br>et l’IUT Gustave Eiffel (Site de Meaux).</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

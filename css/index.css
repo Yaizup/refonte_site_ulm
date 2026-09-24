@@ -1,0 +1,182 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    background-position: center 30%;
+    font-family: Poppins, serif;
+}
+
+.page-index {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-index footer {
+    margin-top: auto !important;
+    flex-shrink: 0;
+}
+
+.logo-acfl {
+    height: 100px;
+    width: auto;
+}
+
+.espace-navigation {
+    width: 90px;
+}
+
+.section-principale {
+    height: 60vh;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.texte-principal {
+    margin-top: 4rem;
+    z-index: 5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel {
+        scroll-behavior: auto;
+    }
+}
+
+.page-contact .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.page-contact .form-control:focus {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border-color: rgba(13, 110, 253, 0.8);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Tablette */
+@media (max-width: 992px) {
+    body {
+        background-position: center 40%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    body {
+        background-position: center 60%;
+    }
+
+    .section-principale {
+        min-height: 42rem;
+    }
+
+    .texte-principal {
+        top: 5.5rem !important;
+        width: calc(100% - 2rem) !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .hero-carousel {
+        top: auto;
+        right: 1rem;
+        bottom: 1.5rem;
+        width: calc(100% - 2rem);
+        transform: none;
+    }
+
+}
+
+.ac2fl_txt {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.hero-carousel {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    left: 5%;
+    z-index: 5;
+    width: auto;
+    transform: translateY(-50%);
+}
+
+.carousel-placeholder {
+    display: grid;
+    height: 22rem;
+    place-items: center;
+    color: #4d4d4d;
+    font-size: 2.5rem;
+    background: #808080;
+}
+
+.carousel-image {
+    height: 22rem;
+    object-fit: cover;
+}
+
+.section-principale {
+    height: auto;
+    min-height: 60vh;
+    background-image: none;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.hero-image {
+    position: relative;
+    height: 60vh;
+    margin: -3rem -3rem 0;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.section-principale .texte-principal {
+    position: absolute !important;
+    top: 72% !important;
+    left: 50% !important;
+    width: 100% !important;
+    margin: 0;
+    transform: translate(-50%, -50%) !important;
+}
+
+.section-principale .hero-carousel {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+    width: 75%;
+    margin: 1rem auto 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    transform: none !important;
+}
+
+@media (max-width: 576px) {
+    .hero-carousel {
+        right: 1rem;
+        left: 1rem;
+        width: 90%;
+        margin: 1rem auto 0;
+    }
+
+    .hero-image {
+        height: 42vh;
+    }
+
+    .carousel-placeholder {
+        height: 15rem;
+        font-size: 1.8rem;
+    }
+
+    .carousel-image {
+        height: 15rem;
+    }
+}
