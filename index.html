@@ -7,12 +7,11 @@
     <title>ULM</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
     <link href="css/index.css" rel="stylesheet">
 </head>
-<body class="page-index">
+<body class="page-accueil">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-75 py-3">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-75 py-3 barre-navigation est-visible">
     <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
 
         <a class="navbar-brand d-flex align-items-center m-0" href="#">
@@ -27,7 +26,7 @@
             <ul class="navbar-nav align-items-lg-center gap-lg-4">
                 <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Nos activités</a></li>
                 <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Galerie</a></li>
-                <li class="nav-item"><a class="nav-link text-white fs-4" href="moyens-pedagogiques.html">Moyens pédagogiques</a></li>
+                <li class="nav-item"><a class="nav-link text-white fs-4" href="#moyens-pedagogiques">Moyens pédagogiques</a></li>
                 <li class="nav-item">
                     <a class="nav-link d-flex align-items-center text-white fs-4" href="contact.html">
                         <i class="fa-solid fa-circle-user me-2"></i>Contact
@@ -41,49 +40,162 @@
 </nav>
 
 <!-- Section hero -->
-<div class="container-fluid px-5 position-relative section-principale">
-
-    <div class="hero-image">
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-50"></div>
-        <div class="position-absolute top-75 start-50 translate-middle w-100 text-center texte-principal" data-aos="fade-up" data-aos-duration="1200">
-            <p class="text-white ac2fl_txt">
-                AC2FL AERO CLUB,<br>
-                Votre ciel, notre passion.
-            </p>
+<section class="section-principale position-relative overflow-hidden">
+    <div class="container d-flex align-items-center justify-content-center text-center" style="min-height: 72vh;">
+        <div class="texte-principal text-white position-relative z-1">
+            <p class="ac2fl_txt mb-0">AC2FL AERO CLUB,<br>Votre ciel, notre passion.</p>
         </div>
     </div>
+</section>
 
-    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" aria-label="Présentation de l'aéroclub">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<section class="py-4 py-lg-5 fond-noir-carousel">
+    <div class="container">
+        <div id="heroCarousel" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel" aria-label="Présentation de l'aéroclub">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1529074963764-98f45c47344b?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Aviation et paysage" style="height: 420px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Avion en vol" style="height: 420px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Aéronef et ciel" style="height: 420px; object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Slide précédente">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Slide suivante">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/test.jpg" class="d-block w-100 carousel-image" alt="Image de présentation de l'aéroclub">
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-placeholder">Second slide</div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-placeholder">Third slide</div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Slide précédente">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Slide suivante">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
     </div>
+</section>
 
-</div>
+<section class="py-5 bg-dark bg-opacity-90">
+    <div class="container rounded-4 border border-secondary-subtle shadow-lg p-4 p-md-5 bg-black">
+        <h2 class="text-center text-white display-6 fw-normal mb-4 mb-md-5">Nos Activités</h2>
+
+        <div class="row justify-content-center g-4 mb-4">
+            <div class="col-4 col-md-3 d-flex justify-content-center">
+                <div class="d-flex align-items-center justify-content-center rounded-circle text-white fs-1 shadow-sm" style="width: 132px; height: 132px; background: linear-gradient(135deg, #ff7f6c, #eb4f3a);">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+            </div>
+            <div class="col-4 col-md-3 d-flex justify-content-center">
+                <div class="d-flex align-items-center justify-content-center rounded-circle text-white fs-1 shadow-sm" style="width: 132px; height: 132px; background: linear-gradient(135deg, #b98ce9, #7d66df);">
+                    <i class="fa-solid fa-bed"></i>
+                </div>
+            </div>
+            <div class="col-4 col-md-3 d-flex justify-content-center">
+                <div class="d-flex align-items-center justify-content-center rounded-circle text-white fs-1 shadow-sm" style="width: 132px; height: 132px; background: linear-gradient(135deg, #9fe39e, #5dc17d);">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center g-4 mb-4">
+            <div class="col-12 col-md-6">
+                <div class="overflow-hidden rounded-4 shadow-sm h-100" style="height: 300px;">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80" class="w-100 h-100 object-fit-cover" alt="Restaurant et repas">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="overflow-hidden rounded-4 shadow-sm h-100" style="height: 300px;">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80" class="w-100 h-100 object-fit-cover" alt="Espace de restauration et réunion">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center text-white">
+            <div class="col-12 col-lg-10 fs-5">
+                <p class="mb-3">Profitez d’une sélection de plats variés et savoureux, adaptés aux différents goûts.</p>
+                <p class="mb-3">Des espaces de restauration confortables sont mis à votre disposition pour vos repas. Vous pourrez également y retrouver des boissons et des encas pour vos petites faims.</p>
+                <p class="mb-3">Les espaces sont aménagés pour vous permettre de manger dans un cadre agréable et convivial.</p>
+                <p class="mb-0">Tout est pensé pour rendre vos pauses repas simples, pratiques et agréables.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="moyens-pedagogiques" class="py-5 bg-dark bg-opacity-90">
+    <div class="container rounded-4 border border-secondary-subtle shadow-lg p-4 p-md-5 bg-black">
+        <div class="text-center text-white mb-4">
+            <h2 class="display-6 fw-normal mb-3">Moyens pédagogiques</h2>
+        </div>
+
+        <div class="row align-items-center g-4 gx-lg-5">
+            <div class="col-12 col-lg-6">
+                <img src="img/piste.jpg" alt="Vue aérienne de la piste" class="img-fluid rounded-4 w-100 h-100 object-fit-cover shadow-sm" style="min-height: 260px;">
+            </div>
+            <div class="col-12 col-lg-6 text-white fs-5">
+                <p class="text-center fw-semibold mb-3">Sur le site, nous disposons de :</p>
+                <ul class="list-unstyled mb-4 ps-0">
+                    <li class="mb-2"><i class="fa-solid fa-check me-2 text-info"></i>Une surface totale de 45 hectares dégagés.</li>
+                    <li class="mb-2"><i class="fa-solid fa-check me-2 text-info"></i>Deux pistes en X de 800 et 450 m.</li>
+                    <li class="mb-2"><i class="fa-solid fa-check me-2 text-info"></i>Un hydrosurface de 8 hectares.</li>
+                    <li class="mb-2"><i class="fa-solid fa-check me-2 text-info"></i>Trois hangars avec surface couverte de 4300 m².</li>
+                    <li class="mb-2"><i class="fa-solid fa-check me-2 text-info"></i>Locaux administratifs informatisés.</li>
+                    <li><i class="fa-solid fa-check me-2 text-info"></i>Salle de cours multimédia avec simulateur de vol.</li>
+                </ul>
+
+                <div class="fs-5">
+                    <p class="mb-3">Nous proposons plusieurs hébergements de qualités, en proposant trois studios et six chambres pour les élèves stagiaires.</p>
+
+                    <ul class="list-unstyled mb-4 ps-0">
+                        <li class="mb-2"><i class="fa-solid fa-circle-dot me-2 text-info"></i>Équipée d’une salle de bain (lavabo, douche, W.C.)</li>
+                        <li class="mb-2"><i class="fa-solid fa-circle-dot me-2 text-info"></i>Connexion WIFI gratuit sur toute la base</li>
+                        <li class="mb-2"><i class="fa-solid fa-circle-dot me-2 text-info"></i>Électricité en plus (compteur individuel)</li>
+                        <li class="mb-2"><i class="fa-solid fa-circle-dot me-2 text-info"></i>télévision, lit en 140</li>
+                        <li class="mb-2"><i class="fa-solid fa-circle-dot me-2 text-info"></i>Draps fournis.</li>
+                    </ul>
+
+                    <p class="fw-bold mb-0">Caution 100€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+
 <script>
-    AOS.init();
+    // On récupère la barre de navigation pour la faire rester visible ou se cacher selon le scroll.
+    const barreNavigation = document.querySelector('.barre-navigation');
+    const hauteurSeuil = 80;
+    let dernierScroll = window.scrollY;
+
+    // Cette fonction gère le comportement au scroll.
+    function gererDefilementNavigation() {
+        const positionScroll = window.scrollY;
+
+        // Si on descend assez bas, la barre devient plus compacte.
+        if (positionScroll > hauteurSeuil) {
+            barreNavigation.classList.add('est-compacte');
+        } else {
+            barreNavigation.classList.remove('est-compacte');
+        }
+
+        // Si on descend, la barre se cache pour laisser plus de place.
+        // Si on remonte, elle réapparaît immédiatement.
+        if (positionScroll > dernierScroll && positionScroll > hauteurSeuil) {
+            barreNavigation.classList.add('est-cachee');
+            barreNavigation.classList.remove('est-visible');
+        } else {
+            barreNavigation.classList.add('est-visible');
+            barreNavigation.classList.remove('est-cachee');
+        }
+
+        dernierScroll = positionScroll;
+    }
+
+    // On applique la logique quand l'utilisateur scroll.
+    window.addEventListener('scroll', gererDefilementNavigation, { passive: true });
 </script>
 
 <footer class="bg-black text-white py-5 mt-5">

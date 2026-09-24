@@ -1,19 +1,46 @@
+/* Base du site */
 body {
     background-image: url("../img/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50vh;
-    background-position: center 30%;
+    background-position: center center;
+    min-height: 100vh;
     font-family: Poppins, serif;
+    padding-top: 92px;
 }
 
-.page-index {
+/* Layout de la page d'accueil */
+.page-accueil {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.page-index footer {
+/* Barre de navigation fixe avec animation légère */
+.barre-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    backdrop-filter: blur(6px);
+}
+
+.barre-navigation.est-visible {
+    transform: translateY(0);
+}
+
+.barre-navigation.est-cachee {
+    transform: translateY(-120%);
+}
+
+.barre-navigation.est-compacte {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.92) !important;
+}
+
+.page-accueil footer {
     margin-top: auto !important;
     flex-shrink: 0;
 }
@@ -27,24 +54,122 @@ body {
     width: 90px;
 }
 
+/* Section principale */
 .section-principale {
-    height: 60vh;
     background-image: url("../img/background.jpg");
     background-size: cover;
     background-position: center;
+    min-height: 70vh;
 }
 
 .texte-principal {
-    margin-top: 4rem;
-    z-index: 5;
+    z-index: 2;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .carousel {
-        scroll-behavior: auto;
-    }
+.ac2fl_txt {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: clamp(2rem, 3vw, 4rem);
+    line-height: 1.2;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    letter-spacing: 0.02em;
 }
 
+/* Bloc noir du carousel */
+.fond-noir-carousel {
+    background: rgba(0, 0, 0, 0.88);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.carousel {
+    margin-top: 1.5rem;
+}
+
+.carousel-video-1 {
+    background: linear-gradient(135deg, #7aa5d8, #3d5c8d);
+}
+
+.carousel-video-2 {
+    background: linear-gradient(135deg, #6a8d7d, #2d4d47);
+}
+
+.carousel-video-3 {
+    background: linear-gradient(135deg, #b88f72, #5d4837);
+}
+
+.carte-media-1 {
+    background: linear-gradient(135deg, #ff8b6b, #d95d47);
+}
+
+.carte-media-2 {
+    background: linear-gradient(135deg, #8e7ee8, #4d4cc0);
+}
+
+/* Section des activités */
+.section-activites {
+    background: linear-gradient(180deg, rgba(10, 14, 18, 0.96), rgba(15, 20, 25, 0.96));
+    min-height: 860px;
+    padding: 2rem 1rem 4rem;
+}
+
+.boit-activites {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: rgba(9, 14, 18, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    border-radius: 0.35rem;
+    padding: 1.5rem 1.25rem 1rem;
+}
+
+.icone-activite {
+    width: 132px;
+    height: 132px;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.08);
+    font-size: 2.7rem;
+}
+
+.activite-restauration {
+    background: linear-gradient(135deg, #ff7f6c, #eb4f3a);
+}
+
+.activite-hebergement {
+    background: linear-gradient(135deg, #b98ce9, #7d66df);
+}
+
+.activite-formation {
+    background: linear-gradient(135deg, #9fe39e, #5dc17d);
+}
+
+.carte-activite {
+    height: 300px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.carte-activite img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.point-liste {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    background: #53d1ff;
+    border-radius: 2px;
+    display: inline-block;
+    margin-top: 0.55rem;
+}
+
+
+
+/* Formulaire de contact */
 .page-contact .form-control::placeholder {
     color: rgba(255, 255, 255, 0.75);
 }
@@ -56,127 +181,4 @@ body {
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 
-/* Tablette */
-@media (max-width: 992px) {
-    body {
-        background-position: center 40%;
-    }
-}
 
-/* Mobile */
-@media (max-width: 576px) {
-    body {
-        background-position: center 60%;
-    }
-
-    .section-principale {
-        min-height: 42rem;
-    }
-
-    .texte-principal {
-        top: 5.5rem !important;
-        width: calc(100% - 2rem) !important;
-        transform: translateX(-50%) !important;
-    }
-
-    .hero-carousel {
-        top: auto;
-        right: 1rem;
-        bottom: 1.5rem;
-        width: calc(100% - 2rem);
-        transform: none;
-    }
-
-}
-
-.ac2fl_txt {
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    font-size: 1.8rem;
-    line-height: 1.4;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
-}
-
-.hero-carousel {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    left: 5%;
-    z-index: 5;
-    width: auto;
-    transform: translateY(-50%);
-}
-
-.carousel-placeholder {
-    display: grid;
-    height: 22rem;
-    place-items: center;
-    color: #4d4d4d;
-    font-size: 2.5rem;
-    background: #808080;
-}
-
-.carousel-image {
-    height: 22rem;
-    object-fit: cover;
-}
-
-.section-principale {
-    height: auto;
-    min-height: 60vh;
-    background-image: none;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.hero-image {
-    position: relative;
-    height: 60vh;
-    margin: -3rem -3rem 0;
-    background-image: url("../img/background.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.section-principale .texte-principal {
-    position: absolute !important;
-    top: 72% !important;
-    left: 50% !important;
-    width: 100% !important;
-    margin: 0;
-    transform: translate(-50%, -50%) !important;
-}
-
-.section-principale .hero-carousel {
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    left: auto !important;
-    width: 75%;
-    margin: 1rem auto 0;
-    overflow: hidden;
-    border-radius: 1rem;
-    transform: none !important;
-}
-
-@media (max-width: 576px) {
-    .hero-carousel {
-        right: 1rem;
-        left: 1rem;
-        width: 90%;
-        margin: 1rem auto 0;
-    }
-
-    .hero-image {
-        height: 42vh;
-    }
-
-    .carousel-placeholder {
-        height: 15rem;
-        font-size: 1.8rem;
-    }
-
-    .carousel-image {
-        height: 15rem;
-    }
-}
