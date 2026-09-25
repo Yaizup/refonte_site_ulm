@@ -24,7 +24,7 @@
 
         <div class="collapse navbar-collapse justify-content-center" id="navContent">
             <ul class="navbar-nav align-items-lg-center gap-lg-4">
-                <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Nos activités</a></li>
+                <li class="nav-item"><a class="nav-link text-white fs-4" href="#nos-activites">Nos activités</a></li>
                 <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Galerie</a></li>
                 <li class="nav-item"><a class="nav-link text-white fs-4" href="#moyens-pedagogiques">Moyens pédagogiques</a></li>
                 <li class="nav-item">
@@ -41,60 +41,36 @@
 
 <!-- Section hero -->
 <section class="section-principale position-relative overflow-hidden">
-    <div class="container d-flex align-items-center justify-content-center text-center" style="min-height: 72vh;">
-        <div class="texte-principal text-white position-relative z-1">
-            <p class="ac2fl_txt mb-0">AC2FL AERO CLUB,<br>Votre ciel, notre passion.</p>
+    <div class="container d-flex align-items-end justify-content-center text-center pb-5" style="min-height: 72vh;">
+        <div class="texte-principal text-white position-relative z-1 mb-5 translate-middle-y">
+            <p class="ac2fl_txt mt-5">AC2FL AERO CLUB,<br>Votre ciel, notre passion.</p>
         </div>
     </div>
 </section>
 
-<section class="py-4 py-lg-5 fond-noir-carousel">
-    <div class="container">
-        <div id="heroCarousel" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel" aria-label="Présentation de l'aéroclub">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1529074963764-98f45c47344b?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Aviation et paysage" style="height: 420px; object-fit: cover;">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Avion en vol" style="height: 420px; object-fit: cover;">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="Aéronef et ciel" style="height: 420px; object-fit: cover;">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Slide précédente">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Slide suivante">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
-        </div>
-    </div>
-</section>
 
-<section class="py-5 bg-dark bg-opacity-90">
+<section id="activites" class="py-5 bg-dark bg-opacity-90 order-2">
     <div class="container rounded-4 border border-secondary-subtle shadow-lg p-4 p-md-5 bg-black">
-        <h2 class="text-center text-white display-6 fw-normal mb-4 mb-md-5">Nos Activités</h2>
+        <div class="text-center text-white mb-4 mb-md-5">
+            <h2 class="display-6 fw-normal mb-3">Nos Activités</h2>
+            <p class="fs-4 mb-2">L’aéro-club assure la formation de pilotes et d’instructeurs. Et propose également des baptêmes de l’air.</p>
+            <p class="fs-4 mb-0">Pour cela, il assure les prestations complémentaires suivantes :</p>
+        </div>
 
         <div class="row justify-content-center g-4 mb-4">
-            <div class="col-4 col-md-3 d-flex justify-content-center">
-                <div class="d-flex align-items-center justify-content-center rounded-circle text-white fs-1 shadow-sm" style="width: 132px; height: 132px; background: linear-gradient(135deg, #ff7f6c, #eb4f3a);">
-                    <i class="fa-solid fa-utensils"></i>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="text-center text-white fs-4">
+                    <img src="img/restauration.svg" alt="Restauration" class="d-block mx-auto" style="width: 270px; height: 270px;">
                 </div>
             </div>
-            <div class="col-4 col-md-3 d-flex justify-content-center">
-                <div class="d-flex align-items-center justify-content-center rounded-circle text-white fs-1 shadow-sm" style="width: 132px; height: 132px; background: linear-gradient(135deg, #b98ce9, #7d66df);">
-                    <i class="fa-solid fa-bed"></i>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="text-center text-white fs-4">
+                    <img src="img/hebergement.svg" alt="Hébergement" class="d-block mx-auto" style="width: 270px; height: 270px;">
                 </div>
             </div>
-            <div class="col-4 col-md-3 d-flex justify-content-center">
-                <div class="d-flex align-items-center justify-content-center rounded-circle text-white fs-1 shadow-sm" style="width: 132px; height: 132px; background: linear-gradient(135deg, #9fe39e, #5dc17d);">
-                    <i class="fa-solid fa-book-open"></i>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="text-center text-white fs-4">
+                    <img src="img/formation.svg" alt="Formation" class="d-block mx-auto" style="width: 270px; height: 270px;">
                 </div>
             </div>
         </div>
@@ -113,7 +89,7 @@
         </div>
 
         <div class="row justify-content-center text-white">
-            <div class="col-12 col-lg-10 fs-5">
+            <div class="col-12 col-lg-10 fs-4">
                 <p class="mb-3">Profitez d’une sélection de plats variés et savoureux, adaptés aux différents goûts.</p>
                 <p class="mb-3">Des espaces de restauration confortables sont mis à votre disposition pour vos repas. Vous pourrez également y retrouver des boissons et des encas pour vos petites faims.</p>
                 <p class="mb-3">Les espaces sont aménagés pour vous permettre de manger dans un cadre agréable et convivial.</p>
@@ -123,40 +99,67 @@
     </div>
 </section>
 
-<section id="moyens-pedagogiques" class="py-5 bg-dark bg-opacity-90">
+<section id="moyens-pedagogiques" class="py-5 bg-dark bg-opacity-90 order-1">
     <div class="container rounded-4 border border-secondary-subtle shadow-lg p-4 p-md-5 bg-black">
         <div class="text-center text-white mb-4">
             <h2 class="display-6 fw-normal mb-3">Moyens pédagogiques</h2>
+            <p class="fs-4 mb-0">Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel.</p>
         </div>
 
-        <div class="row align-items-center g-4 gx-lg-5">
-            <div class="col-12 col-lg-6">
-                <img src="img/piste.jpg" alt="Vue aérienne de la piste" class="img-fluid rounded-4 w-100 h-100 object-fit-cover shadow-sm" style="min-height: 260px;">
+        <div class="row justify-content-center g-4 gx-lg-5">
+            <div class="col-12 text-center">
+                <img src="img/piste.jpg" alt="Vue aérienne de la piste" class="d-block img-fluid rounded-4 object-fit-cover shadow-sm mx-auto w-100" style="min-height: 260px;">
             </div>
-            <div class="col-12 col-lg-6 text-white fs-5">
-                <p class="text-center fw-semibold mb-3">Sur le site, nous disposons de :</p>
+            <div class="col-12 text-white fs-4">
+                <p class="text-center fw-semibold mb-3">Sur le site, nous disposons de :</p>    
                 <ul class="list-unstyled mb-4 ps-0">
-                    <li class="mb-2"><i class="fa-solid fa-check me-2 text-info"></i>Une surface totale de 45 hectares dégagés.</li>
-                    <li class="mb-2"><i class="fa-solid fa-check me-2 text-info"></i>Deux pistes en X de 800 et 450 m.</li>
-                    <li class="mb-2"><i class="fa-solid fa-check me-2 text-info"></i>Un hydrosurface de 8 hectares.</li>
-                    <li class="mb-2"><i class="fa-solid fa-check me-2 text-info"></i>Trois hangars avec surface couverte de 4300 m².</li>
-                    <li class="mb-2"><i class="fa-solid fa-check me-2 text-info"></i>Locaux administratifs informatisés.</li>
-                    <li><i class="fa-solid fa-check me-2 text-info"></i>Salle de cours multimédia avec simulateur de vol.</li>
+                    <li class="mb-2">Une surface totale de 45 hectares dégagés.</li>
+                    <li class="mb-2">Deux pistes en X de 800 et 450 m.</li>
+                    <li class="mb-2">Un hydrosurface de 8 hectares.</li>
+                    <li class="mb-2">Trois hangars avec surface couverte de 4300 m².</li>
+                    <li class="mb-2">Locaux administratifs informatisés.</li>
+                    <li>Salle de cours multimédia avec simulateur de vol.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h1 class="text-center text-white mb-4">Chambres</h1>
+            <div id="chambresCarousel" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel" aria-label="Présentation des chambres">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#chambresCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Chambre"></button>
+                    <button type="button" data-bs-target="#chambresCarousel" data-bs-slide-to="1" aria-label="Salle de bain"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/chambre.jpg" class="d-block w-100" alt="Chambre pour les élèves stagiaires" style="height: 420px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/salledebain.jpg" class="d-block w-100" alt="Salle de bain de l'hébergement" style="height: 420px; object-fit: cover;">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#chambresCarousel" data-bs-slide="prev" aria-label="Photo précédente">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#chambresCarousel" data-bs-slide="next" aria-label="Photo suivante">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-lg-10 text-white fs-4">
+                <p class="mb-3">Nous proposons plusieurs hébergements de qualités, en proposant trois studios et six chambres pour les élèves stagiaires.</p>
+
+                <ul class="list-unstyled mb-4 ps-0">
+                    <li class="mb-2">Équipée d’une salle de bain (lavabo, douche, W.C.)</li>
+                    <li class="mb-2">Connexion WIFI gratuit sur toute la base</li>
+                    <li class="mb-2">Électricité en plus (compteur individuel)</li>
+                    <li class="mb-2">télévision, lit en 140</li>
+                    <li class="mb-2">Draps fournis.</li>
                 </ul>
 
-                <div class="fs-5">
-                    <p class="mb-3">Nous proposons plusieurs hébergements de qualités, en proposant trois studios et six chambres pour les élèves stagiaires.</p>
-
-                    <ul class="list-unstyled mb-4 ps-0">
-                        <li class="mb-2"><i class="fa-solid fa-circle-dot me-2 text-info"></i>Équipée d’une salle de bain (lavabo, douche, W.C.)</li>
-                        <li class="mb-2"><i class="fa-solid fa-circle-dot me-2 text-info"></i>Connexion WIFI gratuit sur toute la base</li>
-                        <li class="mb-2"><i class="fa-solid fa-circle-dot me-2 text-info"></i>Électricité en plus (compteur individuel)</li>
-                        <li class="mb-2"><i class="fa-solid fa-circle-dot me-2 text-info"></i>télévision, lit en 140</li>
-                        <li class="mb-2"><i class="fa-solid fa-circle-dot me-2 text-info"></i>Draps fournis.</li>
-                    </ul>
-
-                    <p class="fw-bold mb-0">Caution 100€</p>
-                </div>
+                <p class="fw-bold mb-0">Caution 100€</p>
             </div>
         </div>
     </div>
@@ -198,7 +201,7 @@
     window.addEventListener('scroll', gererDefilementNavigation, { passive: true });
 </script>
 
-<footer class="bg-black text-white py-5 mt-5">
+<footer class="bg-black text-white py-5 mt-5 order-3">
     <div class="container">
         <div class="row gy-4 align-items-center">
             <div class="col-lg-5">
