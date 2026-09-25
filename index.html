@@ -14,7 +14,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-75 py-3 barre-navigation est-visible">
     <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
 
-        <a class="navbar-brand d-flex align-items-center m-0" href="#">
+        <a class="navbar-brand d-flex align-items-center m-0" href="#accueil">
            <img src="img/acfl_logo.png" alt="acfl logo" class="logo-acfl">
         </a>
 
@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navContent">
             <ul class="navbar-nav align-items-lg-center gap-lg-4">
                 <li class="nav-item"><a class="nav-link text-white fs-4" href="#nos-activites">Nos activités</a></li>
-                <li class="nav-item"><a class="nav-link text-white fs-4" href="#">Galerie</a></li>
+                <li class="nav-item"><a class="nav-link text-white fs-4" href="#galerie">Galerie</a></li>
                 <li class="nav-item"><a class="nav-link text-white fs-4" href="#moyens-pedagogiques">Moyens pédagogiques</a></li>
                 <li class="nav-item">
                     <a class="nav-link d-flex align-items-center text-white fs-4" href="contact.html">
@@ -40,7 +40,7 @@
 </nav>
 
 <!-- Section hero -->
-<section class="section-principale position-relative overflow-hidden">
+<section id="accueil" class="section-principale position-relative overflow-hidden">
     <div class="container d-flex align-items-end justify-content-center text-center pb-5" style="min-height: 72vh;">
         <div class="texte-principal text-white position-relative z-1 mb-5 translate-middle-y">
             <p class="ac2fl_txt mt-5">AC2FL AERO CLUB,<br>Votre ciel, notre passion.</p>
@@ -49,15 +49,16 @@
 </section>
 
 
-<section id="activites" class="py-5 bg-dark bg-opacity-90 order-2">
-    <div class="container rounded-4 border border-secondary-subtle shadow-lg p-4 p-md-5 bg-black">
+<section class="py-5 bg-dark bg-opacity-90 order-1">
+<div class="container contenu-sections rounded-4 border border-secondary-subtle shadow-lg p-4 p-md-5 bg-black">
+<section id="nos-activites" class="py-4 separation-categorie">
         <div class="text-center text-white mb-4 mb-md-5">
             <h2 class="display-6 fw-normal mb-3">Nos Activités</h2>
             <p class="fs-4 mb-2">L’aéro-club assure la formation de pilotes et d’instructeurs. Et propose également des baptêmes de l’air.</p>
             <p class="fs-4 mb-0">Pour cela, il assure les prestations complémentaires suivantes :</p>
         </div>
 
-        <div class="row justify-content-center g-4 mb-4">
+        <div class="row justify-content-center g-4 mb-5">
             <div class="col-12 col-md-4 d-flex justify-content-center">
                 <div class="text-center text-white fs-4">
                     <img src="img/restauration.svg" alt="Restauration" class="d-block mx-auto" style="width: 270px; height: 270px;">
@@ -75,7 +76,7 @@
             </div>
         </div>
 
-        <div class="row justify-content-center g-4 mb-4">
+        <div class="row justify-content-center g-4 mb-5">
             <div class="col-12 col-md-6">
                 <div class="overflow-hidden rounded-4 shadow-sm h-100" style="height: 300px;">
                     <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80" class="w-100 h-100 object-fit-cover" alt="Restaurant et repas">
@@ -96,23 +97,47 @@
                 <p class="mb-0">Tout est pensé pour rendre vos pauses repas simples, pratiques et agréables.</p>
             </div>
         </div>
+</section>
+
+<section id="galerie" class="py-4 separation-categorie">
+    <h2 class="display-6 fw-normal text-center text-white mb-4 mb-md-5">Galerie</h2>
+    <div class="row g-4">
+        <div class="col-12 col-md-6">
+            <div class="ratio ratio-4x3 overflow-hidden shadow-sm">
+                <img src="img/Galerie/helicoptere.png" class="w-100 h-100 object-fit-cover" alt="Hélicoptère en vol au-dessus de l’eau">
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="ratio ratio-4x3 overflow-hidden shadow-sm">
+                <img src="img/Galerie/avion_ulm.png" class="w-100 h-100 object-fit-cover" alt="Avion ULM devant un hangar">
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="ratio ratio-4x3 overflow-hidden shadow-sm">
+                <img src="img/Galerie/avion_jaune.png" class="w-100 h-100 object-fit-cover" alt="ULM jaune et bleu sur le tarmac">
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="ratio ratio-4x3 overflow-hidden shadow-sm">
+                <img src="img/Galerie/avion_coucher_soleil.png" class="w-100 h-100 object-fit-cover" alt="ULM au coucher du soleil">
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="moyens-pedagogiques" class="py-5 bg-dark bg-opacity-90 order-1">
-    <div class="container rounded-4 border border-secondary-subtle shadow-lg p-4 p-md-5 bg-black">
+<section id="moyens-pedagogiques" class="py-4">
         <div class="text-center text-white mb-4">
             <h2 class="display-6 fw-normal mb-3">Moyens pédagogiques</h2>
             <p class="fs-4 mb-0">Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel.</p>
         </div>
 
-        <div class="row justify-content-center g-4 gx-lg-5">
+        <div class="row justify-content-center g-4 gy-5 gx-lg-5">
             <div class="col-12 text-center">
                 <img src="img/piste.jpg" alt="Vue aérienne de la piste" class="d-block img-fluid rounded-4 object-fit-cover shadow-sm mx-auto w-100" style="min-height: 260px;">
             </div>
             <div class="col-12 text-white fs-4">
                 <p class="text-center fw-semibold mb-3">Sur le site, nous disposons de :</p>    
-                <ul class="list-unstyled mb-4 ps-0">
+                <ul class="list-unstyled mb-4 ps-0 text-center">
                     <li class="mb-2">Une surface totale de 45 hectares dégagés.</li>
                     <li class="mb-2">Deux pistes en X de 800 et 450 m.</li>
                     <li class="mb-2">Un hydrosurface de 8 hectares.</li>
@@ -123,7 +148,7 @@
             </div>
         </div>
 
-        <div class="mt-4">
+        <div class="mt-5">
             <h1 class="text-center text-white mb-4">Chambres</h1>
             <div id="chambresCarousel" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel" aria-label="Présentation des chambres">
                 <div class="carousel-indicators">
@@ -147,7 +172,7 @@
             </div>
         </div>
 
-        <div class="row justify-content-center mt-4">
+        <div class="row justify-content-center mt-5">
             <div class="col-12 col-lg-10 text-white fs-4">
                 <p class="mb-3">Nous proposons plusieurs hébergements de qualités, en proposant trois studios et six chambres pour les élèves stagiaires.</p>
 
@@ -162,46 +187,16 @@
                 <p class="fw-bold mb-0">Caution 100€</p>
             </div>
         </div>
-    </div>
+</section>
+
+</div>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-<script>
-    // On récupère la barre de navigation pour la faire rester visible ou se cacher selon le scroll.
-    const barreNavigation = document.querySelector('.barre-navigation');
-    const hauteurSeuil = 80;
-    let dernierScroll = window.scrollY;
+<script src="js/index.js"></script>
 
-    // Cette fonction gère le comportement au scroll.
-    function gererDefilementNavigation() {
-        const positionScroll = window.scrollY;
-
-        // Si on descend assez bas, la barre devient plus compacte.
-        if (positionScroll > hauteurSeuil) {
-            barreNavigation.classList.add('est-compacte');
-        } else {
-            barreNavigation.classList.remove('est-compacte');
-        }
-
-        // Si on descend, la barre se cache pour laisser plus de place.
-        // Si on remonte, elle réapparaît immédiatement.
-        if (positionScroll > dernierScroll && positionScroll > hauteurSeuil) {
-            barreNavigation.classList.add('est-cachee');
-            barreNavigation.classList.remove('est-visible');
-        } else {
-            barreNavigation.classList.add('est-visible');
-            barreNavigation.classList.remove('est-cachee');
-        }
-
-        dernierScroll = positionScroll;
-    }
-
-    // On applique la logique quand l'utilisateur scroll.
-    window.addEventListener('scroll', gererDefilementNavigation, { passive: true });
-</script>
-
-<footer class="bg-black text-white py-5 mt-5 order-3">
+<footer class="bg-black text-white py-5 mt-5 order-4">
     <div class="container">
         <div class="row gy-4 align-items-center">
             <div class="col-lg-5">

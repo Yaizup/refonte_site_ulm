@@ -41,6 +41,18 @@ body {
     background-color: rgba(0, 0, 0, 0.92) !important;
 }
 
+section[id] {
+    scroll-margin-top: 110px;
+}
+
+.separation-categorie {
+    margin-bottom: 3.375rem;
+}
+
+.contenu-sections {
+    max-width: 1740px;
+}
+
 .page-accueil footer {
     margin-top: auto !important;
     flex-shrink: 0;
