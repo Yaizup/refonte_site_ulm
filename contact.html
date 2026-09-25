@@ -40,7 +40,8 @@
 <main class="container-fluid min-vh-100 d-flex align-items-center justify-content-center px-3 py-5">
     <div class="col-12 col-md-8 col-lg-6 col-xl-5">
         <section class="formulaire-contact bg-dark bg-opacity-75 border border-light border-opacity-50 rounded-3 shadow-lg px-4 px-md-5 py-4 py-md-5 text-white">
-            <h1 class="text-center fs-1 fw-light mb-5">Contact</h1>
+            <h1 class="text-center fs-1 fw-light mb-3">Contact</h1>
+            <p class="text-center text-white-50 mb-5">Une question sur nos activités ou nos formations ? Écrivez-nous, nous vous répondrons avec plaisir.</p>
 
             <form action="#" method="post">
                 <div class="mb-4">
@@ -53,6 +54,11 @@
                     <input type="email" class="form-control form-control-lg bg-transparent text-white border-light border-opacity-75 py-2" id="email" name="email" placeholder="Email" required>
                 </div>
 
+                <div class="mb-4">
+                    <label for="telephone" class="visually-hidden">Téléphone</label>
+                    <input type="tel" class="form-control form-control-lg bg-transparent text-white border-light border-opacity-75 py-2" id="telephone" name="telephone" placeholder="Téléphone (facultatif)">
+                </div>
+
                 <div class="mb-5">
                     <label for="message" class="visually-hidden">Message</label>
                     <textarea class="form-control form-control-lg bg-transparent text-white border-light border-opacity-75 py-2" id="message" name="message" rows="6" placeholder="Ecrivez votre message ici..." required></textarea>
@@ -62,6 +68,7 @@
                     <button type="submit" class="btn btn-primary btn-lg px-5 shadow-sm">Envoyer</button>
                 </div>
             </form>
+
         </section>
     </div>
 </main>
